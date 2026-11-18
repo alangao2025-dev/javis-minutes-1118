@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会议纪要｜Javis 晨会：产品定位与定价 2026-11-18</title>
+<style>
+  :root{--bg:#f4f6fb;--card:#fff;--ink:#1f2937;--muted:#6b7280;--pri:#2563eb;--pri-l:#e8efff;--ok:#16a34a;--warn:#d97706;--bad:#dc2626;--line:#e5e7eb}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}
+  header{background:linear-gradient(135deg,#1e3a8a,#2563eb);color:#fff;padding:36px 20px 70px}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  header h1{margin:0 0 6px;font-size:28px}
+  header p{margin:0;opacity:.85}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .meta span{background:rgba(255,255,255,.15);padding:4px 12px;border-radius:999px;font-size:13px}
+  main{margin-top:-46px;padding-bottom:60px}
+  .card{background:var(--card);border-radius:14px;box-shadow:0 4px 18px rgba(30,58,138,.07);padding:22px 26px;margin-bottom:18px}
+  .card h2{margin:0 0 12px;font-size:20px;display:flex;align-items:center;gap:10px}
+  .card h3{font-size:16px;margin:16px 0 6px;color:#1e3a8a}
+  .num{background:var(--pri);color:#fff;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:none}
+  ul,ol{padding-left:22px;margin:6px 0}
+  li{margin:3px 0}
+  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:6px;margin-right:4px;vertical-align:1px}
+  .t-key{background:#dbeafe;color:#1e40af}.t-risk{background:#fee2e2;color:#991b1b}.t-tbd{background:#fef3c7;color:#92400e}.t-inf{background:#f3f4f6;color:#4b5563}
+  .concl{background:#f0fdf4;border-left:4px solid var(--ok);padding:8px 14px;border-radius:0 8px 8px 0;margin:10px 0}
+  .note{background:#fffbeb;border-left:4px solid var(--warn);padding:8px 14px;border-radius:0 8px 8px 0;margin:10px 0;font-size:14px}
+  .debate{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:15px}
+  .summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .summary div{background:var(--pri-l);border-radius:10px;padding:12px 14px}
+  .summary b{display:block;color:#1e3a8a;margin-bottom:2px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
+  th{background:#f8fafc;color:#334155;font-weight:600;white-space:nowrap}
+  .pri{font-weight:600;white-space:nowrap}.p1{color:var(--bad)}.p2{color:var(--warn)}.p3{color:var(--muted)}
+  .people{display:flex;flex-wrap:wrap;gap:10px}
+  .people div{border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:14px}
+  .people b{color:#1e3a8a}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:10px 20px 30px}
+  @media print{header{padding:20px}main{margin-top:0}.card{box-shadow:none;border:1px solid var(--line);break-inside:avoid}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Javis 晨会：产品定位、核心能力与定价</h1>
+    <p>给 Allen 讲清产品背景并安排今天的 Windows 原型；讨论并确定两档定价（999 / 1999）以及对外怎么讲</p>
+    <div class="meta">
+      <span>📅 2026-11-18（周三）上午 约 11:18 开始</span>
+      <span>⏱ 约 76 分钟</span>
+      <span>👥 Kevin、mango、Allen、大胃</span>
+      <span>📄 来源：录音转写原文</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="card">
+    <h2><span class="num">★</span>一页摘要</h2>
+    <div class="summary">
+      <div><b>做什么</b>在客户 Windows 电脑上装一个定制的本地 AI 助手（基于 Pi），唤醒即用；简单问题直接答，复杂任务开“工作项”处理。</div>
+      <div><b>卖给谁</b>个人公司、初创和小团队：资料不多、人少事杂、一人多岗、极度追求效率。</div>
+      <div><b>目标</b>帮用户把效率提升 10 倍（质变），而不是 30%～50%（量变）。</div>
+      <div><b>定价</b>取消 499 档，只保留 <b>999</b> 和 <b>1999</b> 两档（月付），提供 7～14 天免费试用。</div>
+      <div><b>怎么讲</b>不拿价格和软件比，拿价格和“请一个人”比：999≈请中级助理，1999≈请高级助理。</div>
+      <div><b>今天要交</b>Allen 今天 17:00 前交一个 Windows 原型，只做界面外观，不需要功能、不接大模型。</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">0</span>参会人</h2>
+    <div class="people">
+      <div><b>Kevin</b>｜主讲，讲产品背景、定位和定价</div>
+      <div><b>Allen</b>｜听背景、提问，负责今天的原型</div>
+      <div><b>mango</b>｜质疑两档定价的区别和对外表述</div>
+      <div><b>大胃</b>｜讲定价思路和宣传方式，负责宣传口径</div>
+    </div>
+    <p class="note">转写稿只标“发言人1～5”，没有名字。上表的对应关系是根据对话内容推断的（例如发言人1 提到“芒果作为反面例子”时发言人4 回应“好多都不能用”；发言人5 说“宣传口径我到时候也会改”）。如有不对请告诉我修改。转写里的“芒果”即 mango，“艾伦 / alen”即 Allen。</p>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">1</span>产品形态：本地 AI 助手 + 三项配套能力</h2>
+    <h3>入口与交互</h3>
+    <ul>
+      <li>简化现有桌面端，基于 Pi 做一个定制版本，安装在客户的 Windows 电脑上。</li>
+      <li>入口参考 Mac 上语音/快捷键唤醒的方式：唤醒后直接提问。</li>
+      <li>简单问题（如“今天天气怎么样”）直接回答；需要干活的（如“帮我整理会议纪要”）就开一个<b>工作项</b>。工作项相当于一个会话，用户在里面继续对话，做完可以关闭。</li>
+    </ul>
+    <h3>三项配套能力</h3>
+    <ol>
+      <li><b>资料解析与全文语义检索</b>：只处理用户授权的文件或文件夹（授权文件夹即包含其下所有子文件夹）。文档提取文字；图片转成文字描述；视频提取音轨文字和画面描述；音频转文字。转换后的内容支持全文语义检索，需要在客户电脑上装一个很小的检索引擎。</li>
+      <li><b>用户画像</b>：根据用户的资料和交互，总结他做事的方式和习惯（例如对细节要求高的人，文档会要求详细注释、字号等），每个人都不同。具体要求 Kevin 之后再讲，<b>这次原型不用考虑</b>。</li>
+      <li><b>交互方式</b>：Kevin 说之后再讲，这次先不用管。</li>
+    </ol>
+    <div class="concl">核心卖点是“我懂你”：知道用户要怎么干活。分为四块：降低使用门槛、理解用户意图、提高交付质量、信息安全。</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">2</span>定位与目标用户</h2>
+    <p>Allen 提出：大厂和现有产品（WorkBuddy、Codex 等）都在做类似的事，性能可能更好，我们的定位是什么？Kevin 的回答：</p>
+    <ul>
+      <li><b>只服务一小群人</b>：个人公司、初创公司、小团队。特点：资料不多；人少所以事杂，一人多岗；事情多变。</li>
+      <li><b>为什么选这么窄</b>：人群明确，推广成本低；售价高，只要很少的客户就能支撑收入。大而全的产品做了很多适合中大型企业的功能（接各种业务系统），小团队用不上。</li>
+      <li><b>小团队用不好现有工具的原因</b>：门槛高，正常用出生产力需要较长的学习时间；这些人很忙，也没有行业经验，“没有时间，也不知道怎么开始”。</li>
+      <li><b>和 WorkBuddy 的差别（Kevin 举例）</b>：它只能对指定的三五个文件做语义检索，不能对几百个文件的整个工作区检索；它只在某个项目里了解用户，不是针对这个人整体建立画像。</li>
+      <li><b>要的是 10 倍效率</b>：Kevin 认为现有工具只把效率提高 30%～50%（量变）；目标是让我们四个人这种状态快速复制给普通用户（质变）。</li>
+    </ul>
+    <h3>案例：小红书获客团队（Allen 提供）</h3>
+    <p>一个帮旅游公司在小红书获客的团队，有美工出图，也积累了很多图和文案，但出图、配文案、整合、发布的链路很慢，想用 AI 但不知道怎么用。Kevin：用我们的方式可以拿用户已有的文件做模板，按对应提示词生成要发布的内容，“晚上下班前说一件事，第二天早上起来就做好了”。</p>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">3</span>为什么单独强调“理解意图”和“交付质量”</h2>
+    <ul>
+      <li>Kevin 引用的调研报告：用户对 AI 吐槽最多的两点是 <b>① 要反复改提示词让 AI 理解意图</b>，<b>② 生成的内容要反复人工修改</b>（报告中有一项数字为 45.9%，转写不清楚对应哪一项）。</li>
+      <li>这是两件事：意图是“这份会议纪要到底要干嘛用”；修改是对内容粒度和细节的要求。</li>
+      <li>做法：在交付时给模型一个 <b>样例（sample）</b>，再加上 <b>个人画像</b>，交付质量会比模型凭对话猜更好。以会议纪要为例：时间、参会人、内容摘要、待办，关键是写到什么粒度。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">4</span>信息安全</h2>
+    <ul>
+      <li><b>授权才读</b>：用户授权的文件才读，没授权不读，和把文件丢给豆包是一样的道理。</li>
+      <li><b>资料不出本地</b>：用户资料不上云。唯一可能对外的是模型调用时取用的内容。</li>
+      <li><b>不帮用户发邮件</b>：参考智谱 GLM 的事件，文档可以写好，邮件由用户自己发。</li>
+      <li><b>画像和转换结果在本地有完整一份</b>：服务端也会存一份（数据量很小），目的是电脑关机后用户还能用手机继续工作——这需要另外购买云端 VM，两台机器保持同步。</li>
+      <li>Allen 问：怎么让用户信任？Kevin：之后会做一系列建立信任的公开动作，逐步告诉用户。<span class="tag t-tbd">待细化</span></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">5</span>定价：取消 499，只保留 999 / 1999</h2>
+    <h3>为什么取消 499</h3>
+    <ul>
+      <li>很少有人会为一个“软件”每月付 499 元并长期用（会上能想到的只有健身房）。所以定价本身就不能让用户把它当软件看，<b>价格要对标人，而不是对标产品</b>。</li>
+      <li>价格明显高于同类产品，用户才会问“你凭什么这么贵、和它们有什么不一样”，我们才有机会解释；价格一样的话没人会问。</li>
+      <li>499 档的 token 不够用，成本高、收益低。</li>
+      <li>付了 499 的用户一定会提需求（“能不能帮我做这个”），带来 Allen 和客服的成本；满足不了又会觉得“这么贵的软件不提供服务”。例子：之前有个用户嫌给的 VM 配置低（2 核 2G，10G 硬盘），自己往 VM 里装东西连本机写代码，最后被停掉。</li>
+    </ul>
+    <div class="debate">
+      <b>大胃的不同意见</b>：大多数用户的需求是逐步满足的，阶梯式定价（先用 499 产生付费和粘性，再推升级）对一部分人更好，直接 1999 可能流失。<br>
+      <b>Kevin 的回应</b>：用 499 时用户已经觉得很爽，看不到后面能做到什么；直接把整套给出来，用到哪一步是用户自己的事。最后大胃认同“一步到位”，并提出把 999 作为过渡和引流档。
+    </div>
+    <h3>两档的区别</h3>
+    <table>
+      <tr><th>项目</th><th>999 / 月</th><th>1999 / 月</th></tr>
+      <tr><td>每月工作项数量（举例）</td><td>500 个</td><td>2000 个</td></tr>
+      <tr><td>同时进行的工作项</td><td>较少（会上举例 3 件）</td><td>较多（会上举例 5 件）</td></tr>
+      <tr><td>客服（远程，不上门）</td><td>有</td><td>有</td></tr>
+      <tr><td>定制化需求 / 写专属 skill</td><td>可以提，排进后续版本，周期较长；不帮用户写，只教怎么做</td><td>Allen 专属服务，按用户业务定制 skill，响应快（三五天，甚至当天）</td></tr>
+    </table>
+    <ul>
+      <li><b>工作项计数</b>：开一个工作项消耗 1 个；对外不叫“点数”，叫工作项。用贵的模型（如 Opus）每个工作项消耗 5 个，即 500 个额度用 DeepSeek 能开 500 个，用 Opus 只能开 100 个。</li>
+      <li>mango 问：一直用同一个会话不关闭怎么算？Kevin：引导用户“一个工作项做完一件事就关闭”；长会话会做上下文压缩。长上下文中途换模型会导致全部重新写缓存，成本很高，需要技术上解决。<span class="tag t-risk">成本风险</span></li>
+      <li>两档都提供服务（人工 + 机器的组合），差别在于 1999 有人帮客户把业务流程定制落地。例如小红书团队“出图 + 写文案 + 整合发布”做成一个 skill（不含视频，成本太高）。</li>
+      <li>后续可能有更高档（会上提到 3000～5000，最终可能做到 5000～10000）：相当于每月花 5000 请到 Allen 这样的人，这种人小企业花钱也请不到。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">6</span>对外怎么讲两档</h2>
+    <p>mango 的担心：用户最后要看纸面上 999 和 1999 分别有什么。“500 个 / 2000 个工作项”“普通响应 / 快速响应”写出来没有吸引力；也不要把区别放在“门槛”上。</p>
+    <ul>
+      <li><b>Kevin</b>：不管哪档，都要让用户想“我是请了一个中级的人还是高级的人”，所有具体描述都往“人”上靠，不往软件功能上靠。参照：实习生每月也要三四千元加社保；做一个最基本的独立站市场价 800～2000 元，且之后每次发布还要另外收费。</li>
+      <li><b>大胃</b>：
+        <ul>
+          <li>999 是过渡和引流档；免费试用（7～14 天）体验的是 999 档。</li>
+          <li>宣传主打 1999：用户试用后发现很强、效率提升 5～6 倍，但遇到 skill 这类自己搞不定的东西，这时 1999 能一步到位解决。</li>
+          <li>工作项数量等细项放在小字或详情页里，不作为主要宣传内容。</li>
+          <li>宣传素材用种子用户的反馈：遇到什么问题、怎么帮他们解决。</li>
+        </ul>
+      </li>
+      <li>Allen：大部分普通客户不爱研究，研究也研究不出来，他们希望有人工帮他们落地，这样才愿意付费；单纯的软件市面上太多了。</li>
+    </ul>
+    <div class="concl">结论：产品不是一个软件，是一套“人 + 机器”的完整服务。定价、宣传和所有策略都围绕这一点。</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">7</span>其他观点（Kevin）</h2>
+    <ul>
+      <li>市场数据：WorkBuddy 加豆包等，月访问量约 2 亿次，摊到每天约 1000 万次；像我们这样每天约 30 次的重度用户很少。偶尔用一两次的人没有把 AI 变成生产力，AI 对他们只是锦上添花。</li>
+      <li>客户越多，方案越容易复制：例如爬虫框架写好后，新增爬取需求很快。Allen 举例：一篇文章原来要花几块钱，现在约 1 元。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">8</span>待办事项</h2>
+    <table>
+      <tr><th>#</th><th>事项</th><th>负责人</th><th>时间</th><th>优先级</th></tr>
+      <tr><td>1</td><td>做 Windows 原型 demo：只做界面外观，不需要功能，不接大模型（参考：唤醒入口、简单问答、工作项会话）</td><td>Allen</td><td>今天（11/18）17:00 前</td><td class="pri p1">高</td></tr>
+      <tr><td>2</td><td>把本次会议纪要发给 Allen，作为原型的输入</td><td>Kevin</td><td>会后</td><td class="pri p1">高</td></tr>
+      <tr><td>3</td><td>对比 ChatGPT、WorkBuddy、Codex 等产品，整理小团队用它们做不出生产力的具体原因</td><td>Allen <span class="tag t-inf">推断</span></td><td>未定</td><td class="pri p2">中</td></tr>
+      <tr><td>4</td><td>把本次会议录音转给大胃</td><td>Kevin <span class="tag t-inf">推断</span></td><td>会后</td><td class="pri p2">中</td></tr>
+      <tr><td>5</td><td>按新定价修改宣传口径：主打 1999、对标“请人”，细项放小字，使用种子用户反馈</td><td>大胃</td><td>未定</td><td class="pri p2">中</td></tr>
+      <tr><td>6</td><td>讲解用户画像的具体要求，以及交互方式</td><td>Kevin</td><td>之后</td><td class="pri p3">低</td></tr>
+      <tr><td>7</td><td>技术方案：长上下文中途切换模型导致缓存重写的成本问题</td><td>未定</td><td>未定</td><td class="pri p3">低</td></tr>
+      <tr><td>8</td><td>设计建立信任的对外动作（隐私和本地化承诺）</td><td>未定</td><td>未定</td><td class="pri p3">低</td></tr>
+    </table>
+    <p class="note">会上没有明确负责人或时间的事项，按对话内容推断，已标“推断”或“未定”。</p>
+  </section>
+
+  <section class="card">
+    <h2><span class="num">!</span>整理说明</h2>
+    <ul>
+      <li>转写稿有不少同音错字，已按上下文理解：“派 / 拍”= Pi，“圆形”= 原型，“绘画”= 会话，“我body / 温巴里 / work body”= WorkBuddy，“code next”= Codex，“opens / office”= Opus（Claude 模型），“dept / dip sip”= DeepSeek，“智谱 GLN”= 智谱 GLM，“艾伦”= Allen。</li>
+      <li>会上提到的另一个月费 200 美元起、限量使用的平台，转写成了“科学 / 科技”，无法确定是哪个产品，所以没有写名字。</li>
+      <li>原文中与业务无关的玩笑和闲聊已略去。</li>
+    </ul>
+  </section>
+
+</main>
+<footer>Javis 晨会纪要 · 2026-11-18 · 根据录音转写整理</footer>
+</body>
+</html>
